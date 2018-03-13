@@ -7,7 +7,7 @@
        storageBucket: "employeedata-31bf9.appspot.com",
        messagingSenderId: "420064743945"
    };
-   firebase.initializeApp(config);
+   
    firebase.initializeApp(config);
    var database = firebase.database();
    person = {
@@ -16,6 +16,7 @@
        startdate: "",
        rate: 0,
    }
+
    $("#submitButton").on("click", function () {
        event.preventDefault();
        person.name = $("#emName").val().trim();
